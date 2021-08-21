@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Arial';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        font-size: 40px;
+    }
+    .conteiner-anotador {
+        width: 1000px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        top: 50px;
+        .conteiner-anotador-mensaje {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 500px;
+            .formulario-anotador {
+                display: flex;
+                flex-direction: column;
+                label {
+                    font-weight: bold;
+                    font-size: 20px;
+                    margin-top: 20px;
+                }
+                textarea {
+                    width: 400px;
+                    height: 70px;
+                }
+                button {
+                    margin: 20px 0px;
+                    height: 40px;
+                }
+            }
+            .mensaje {
+                color: red;
+                border: 1px solid red;
+                padding: 10px 20px;
+            }
+        }
+        .notas-creadas {
+            width: 500px;
+            h2 {
+                font-size: 30px;
+                text-align: center;
+            }
+            #notas {
+                max-width: 500px;
+                .nota {
+                    max-width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    border-bottom: 1px solid #bdbdbd;
+                    padding: 10px 0px;
+                    .nota-boton {
+                        width: 30px;
+                        height: 30px;
+                        background-color: transparent;
+                        border: none;
+                        .nota-equis {
+                            font-size: 25px;
+                            color: red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    body {
+        h1 {
+            font-size: 30px;
+        }
+        .conteiner-anotador {
+            width: 700px;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        h1 {
+            font-size: 20px;
+        }
+        .conteiner-anotador {
+            width: 400px;
+            .conteiner-anotador-mensaje {
+                width: 100%;
+                .formulario-anotador {
+                    width: 100%;
+                    textarea {
+                        width: 100%;
+                    }
+                }
+            }
+            .notas-creadas {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        .conteiner-anotador {
+            width: 300px;
+        }
+    }
+}

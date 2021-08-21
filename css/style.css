@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Arial";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body h1 {
+  font-size: 40px;
+}
+body .conteiner-anotador {
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  top: 50px;
+}
+body .conteiner-anotador .conteiner-anotador-mensaje {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+}
+body .conteiner-anotador .conteiner-anotador-mensaje .formulario-anotador {
+  display: flex;
+  flex-direction: column;
+}
+body .conteiner-anotador .conteiner-anotador-mensaje .formulario-anotador label {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+}
+body .conteiner-anotador .conteiner-anotador-mensaje .formulario-anotador textarea {
+  width: 400px;
+  height: 70px;
+}
+body .conteiner-anotador .conteiner-anotador-mensaje .formulario-anotador button {
+  margin: 20px 0px;
+  height: 40px;
+}
+body .conteiner-anotador .conteiner-anotador-mensaje .mensaje {
+  color: red;
+  border: 1px solid red;
+  padding: 10px 20px;
+}
+body .conteiner-anotador .notas-creadas {
+  width: 500px;
+}
+body .conteiner-anotador .notas-creadas h2 {
+  font-size: 30px;
+  text-align: center;
+}
+body .conteiner-anotador .notas-creadas #notas {
+  max-width: 500px;
+}
+body .conteiner-anotador .notas-creadas #notas .nota {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #bdbdbd;
+  padding: 10px 0px;
+}
+body .conteiner-anotador .notas-creadas #notas .nota .nota-boton {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+}
+body .conteiner-anotador .notas-creadas #notas .nota .nota-boton .nota-equis {
+  font-size: 25px;
+  color: red;
+}
+
+@media (max-width: 1000px) {
+  body h1 {
+    font-size: 30px;
+  }
+  body .conteiner-anotador {
+    width: 700px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 600px) {
+  body h1 {
+    font-size: 20px;
+  }
+  body .conteiner-anotador {
+    width: 400px;
+  }
+  body .conteiner-anotador .conteiner-anotador-mensaje {
+    width: 100%;
+  }
+  body .conteiner-anotador .conteiner-anotador-mensaje .formulario-anotador {
+    width: 100%;
+  }
+  body .conteiner-anotador .conteiner-anotador-mensaje .formulario-anotador textarea {
+    width: 100%;
+  }
+  body .conteiner-anotador .notas-creadas {
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  body .conteiner-anotador {
+    width: 300px;
+  }
+}/*# sourceMappingURL=style.css.map */
