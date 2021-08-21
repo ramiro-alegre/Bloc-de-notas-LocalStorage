@@ -1,5 +1,5 @@
 # Bloc-de-notas-LocalStorage
- Practica de LocalStorage con un Bloc de notas 
+ Practica de LocalStorage con un Bloc de notas al estilo "To do list"
  
  Watch in: https://affectionate-montalcini-cd1ac1.netlify.app/
 
